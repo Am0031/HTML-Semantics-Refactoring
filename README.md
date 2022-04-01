@@ -14,7 +14,7 @@ Using semantic elements in the body:
 Using nav tags inside the header to enclose the unordered list
     Note: adjusted the CSS descriptions accordingly
 
-Using section tags instead of div tags for the content section
+Using main and section tags instead of div tags for the content section
 
 Using aside tags instead of div tags for the benefits section (side part)
 
