@@ -36,3 +36,9 @@ Adjusting the header in the footer to h4 so that it falls into a logical order w
 Bug fix:
 Added an id to first nav bar item target to redirect to correct location on page
 
+
+
+###To Do:
+- Review semantic elements to improve them 
+- Refactor CSS code
+- Review/Add comments
