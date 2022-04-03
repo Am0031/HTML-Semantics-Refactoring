@@ -6,7 +6,7 @@ This webpage's code is already built but its **semantic elements** were reviewed
 
 Deployed URL:
 
-Github URL:
+Github URL: [https://github.com/Am0031/HTML-Semantics-Refactoring](https://github.com/Am0031/HTML-Semantics-Refactoring)
 
 ## Introduction - What are HTML Semantic elements
 
@@ -125,6 +125,7 @@ And after with the `id` added:
 
 As part of our accessibility exercise, we also looked to improve the CSS code and we made the following changes:
 
+- Adding comments in the CSS code for clarity
 - Grouping the different classes of the benefits sections in the aside part into one class called **benefit-subset** as they all have the same attributes and values
 - Grouping the different classes of the main sections in the main part into one class called **content-subset** as they all have the same attributes and values
 
