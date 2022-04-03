@@ -10,7 +10,7 @@ Deployed URL: [Deployed at this address](https://am0031.github.io/HTML-Semantics
 
 Github URL:
 
-- Main folder: [Link to the main branch](https://github.com/Am0031/HTML-Semantics-Refactoring)
+- Repository: [Link to the main branch](https://github.com/Am0031/HTML-Semantics-Refactoring)
 - Pull request: [Link to Pull request from dev branch](https://github.com/Am0031/HTML-Semantics-Refactoring/pull/1#issue-1190133294)
 
 ## Introduction - What are HTML Semantic elements
