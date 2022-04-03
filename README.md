@@ -2,9 +2,11 @@
 
 **Refactoring a HTML page for better accessibility**
 
-This webpage's code is already built but was reviewed in order to be made more accessible for screen readers.
-</br> Deployed URL:
-</br> Github URL:
+This webpage's code is already built but its **semantic elements** were reviewed in order to be made more accessible for screen readers.
+
+Deployed URL:
+
+Github URL:
 
 ## Introduction - What are HTML Semantic elements
 
@@ -33,8 +35,9 @@ To make sure the division of the page followed a good logic:
 
 - We amended the code for the use of semantic elements header and footer instead of div
 
-  See before and after header tags: </br>
-  Before: </br>
+  See before and after header tags:
+
+  Before:
 
   ![Original header code](/assets/images/screenshot-header-original.png)
 
@@ -42,7 +45,8 @@ To make sure the division of the page followed a good logic:
 
   ![Amended header code](/assets/images/screenshot-header-tag.png)
 
-  See before and after footer tags: </br>
+  See before and after footer tags:
+
   Before:
 
   ![Original footer code](/assets/images/screenshot-footer-original.png)
@@ -72,9 +76,13 @@ To make sure the division of the page followed a good logic:
 To make sure the elements were identified correctly:
 
 - We added additional properties for the hero image to made it more accessible.
-  </br> Original line: </br>
+
+  Original line:
+
   ![Original code line for hero image](/assets/images/screenshot-hero-original.png)
-  </br> Amended line: </br>
+
+  Amended line:
+
   ![New code line for hero image](/assets/images/screenshot-hero-aria.png)
 
 - We added the figure tags around images to enclose the img tags and its caption (if relevant).
@@ -82,11 +90,20 @@ To make sure the elements were identified correctly:
 
 - We added alt attribute into the img attributes to give a description for each picture and icon.
   _Note: that helps the screen reader when reading the images on the page_
-  </br> For example: </br>
+
+  For example:
+
   ![Example of figure tags and alt attribute](/assets/images/screenshot-fig-alt.png)
 
 - We amended the title: we gave a longer description in the title space to have a more meaningful title
-  </br> Original code: </br> `<title>website</title>` </br> Improved code: </br> `<title>Horiseon - Digital Marking and Online Management</title>`
+
+  Original code:
+
+  `<title>website</title>`
+
+  Improved code:
+
+  `<title>Horiseon - Digital Marking and Online Management</title>`
 
 - We adjusted the header tag in the footer to h4 so that it falls into a logical order with the other header tags.
   _Note: adjusted in html code and in CSS description_
