@@ -19,23 +19,23 @@ The aspects listed below are important when looking at accessibility and good us
 ## Semantic elements - Best practices
 
 To make sure the html code is optimised for accessibility, it is good to follow these [best practices](https://www.freecodecamp.org/news/html-best-practices/#:~:text=It%20is%20best%20practice%20to,and%20elements%20instead.)
-For this code review, we will be reviewing the following principles:
+For this code review, we are working from the following principles:
 
 - Logical division of the page
 - Better identification of the different elements on the page
-- Bug fix for full accessibility
+- All redirection links work for full accessibility
 
 And we will also do some CSS refactoring for cleaner code.
 
 Following these principles, the details of the changes made are shown in the descriptions and screenshots below.
 
-## Logical division of the page:
+## Logical division of the page
 
 To make sure the division of the page followed a good logic:
 
-- We amended the code for the use of semantic elements header and footer instead of div
+- We amended the code for the use of semantic elements `header` and `footer` instead of `div`, and we used `nav` tags inside the header to enclose the unordered list. (_Note: adjusted the CSS descriptions accordingly_)
 
-  See before and after header tags:
+  See header before and after review:
 
   Before:
 
@@ -45,7 +45,7 @@ To make sure the division of the page followed a good logic:
 
   ![Amended header code](/assets/images/screenshot-header-tag.png)
 
-  See before and after footer tags:
+  See footer before and after review:
 
   Before:
 
@@ -57,7 +57,6 @@ To make sure the division of the page followed a good logic:
 
 - We amended the code for the use of semantic elements in the body:
 
-  - Using nav tags inside the header to enclose the unordered list (_Note: adjusted the CSS descriptions accordingly_)
   - Using main and section tags instead of some of the div tags for a better structured content section
   - Using aside tags instead of div tags for the benefits section (side part of the page)
 
@@ -71,7 +70,7 @@ To make sure the division of the page followed a good logic:
 
   ![Amended main section](/assets/images/screenshot-main-tag.png)
 
-## Identification of the different elements on the page:
+## Identification of the different elements on the page
 
 To make sure the elements were identified correctly:
 
@@ -85,13 +84,13 @@ To make sure the elements were identified correctly:
 
   ![New code line for hero image](/assets/images/screenshot-hero-aria.png)
 
-- We added the figure tags around images to enclose the img tags and its caption (if relevant).
-  _Note: that helps when placed just before a paragraph (for example in benefits section), so the screen reader knows the difference between the picture's info and a separate paragraph_
+- We added the `figure` tags around images to enclose the `img` tags and its caption (if relevant).
+  (_Note: that helps when placed just before a paragraph &mdash; for example in benefits section &mdash; so the screen reader knows the difference between the picture's info and a separate paragraph_)
 
-- We added alt attribute into the img attributes to give a description for each picture and icon.
-  _Note: that helps the screen reader when reading the images on the page_
+- We added an `alt` attribute into the `img` attributes to give a description for each picture and icon.
+  (_Note: that helps the screen reader when reading the images on the page_)
 
-  For example:
+  See an example of the added figure tags and alt attribute in this screenshot:
 
   ![Example of figure tags and alt attribute](/assets/images/screenshot-fig-alt.png)
 
@@ -105,25 +104,41 @@ To make sure the elements were identified correctly:
 
   `<title>Horiseon - Digital Marking and Online Management</title>`
 
-- We adjusted the header tag in the footer to h4 so that it falls into a logical order with the other header tags.
-  _Note: adjusted in html code and in CSS description_
+- We adjusted the header tag in the footer to `h4` so that it falls into a logical order with the other header tags &mdash; see footer screenshot above.
+  (_Note: adjusted in html code and in CSS description_)
 
-## Bug fix:
+## Redirection links - Bug fix
 
-To make the page fully accessible, the redirection link must work and direct you to the right part of the page. </br>
-To that effect, we added an id to the first nav bar item target to redirect to the correct part of the main section.
+To make the page fully accessible, the redirection links must all work and direct the user to the right part of the page.
 
-## Improvement of the CSS:
+To that effect, we added a missing `id` to the first nav bar item target to redirect to the correct part of the main section when clicked on.
+
+See the original code with no `id` defined:
+
+![Original code Nav 1st link](/assets/images/screenshot-id-missing.png)
+
+And after with the `id` added:
+
+![Amended code Nav 1st link](/assets/images/screenshot-id-added.png)
+
+## Improvement of the CSS
 
 As part of our accessibility exercise, we also looked to improve the CSS code and we made the following changes:
 
-- Grouping the different classes of the benefits in the aside part into one class called benefit-subset as they all have the same attributes and values
-- Grouping the different classes of the sections in the main part into one class called content-subset as they all have the same attributes and values
+- Grouping the different classes of the benefits sections in the aside part into one class called **benefit-subset** as they all have the same attributes and values
+- Grouping the different classes of the main sections in the main part into one class called **content-subset** as they all have the same attributes and values
 
-## Still To Do:
+See an example of the css grouping in the below screenshot:
 
-- Review semantic elements to improve them
-- Continue the refactoring of CSS code
-- Review/Add comments
-- Add screenshots
-- Add link to deployed github page
+Before:
+
+![Original CSS](/assets/images/screenshot-css-original.png)
+
+After grouping amendment:
+
+![Amended CSS](/assets/images/screenshot-css-amended.png)
+
+## Possible further improvements
+
+- Continue the review of semantic elements to improve them further?
+- Continue the refactoring of CSS code?
