@@ -32,16 +32,40 @@ Following these principles, the details of the changes made are shown in the des
 To make sure the division of the page followed a good logic:
 
 - We amended the code for the use of semantic elements header and footer instead of div
-  </br>See before and after header tags: </br>
+
+  See before and after header tags: </br>
   Before: </br>
-  ![Header Original code](/assets/images/screenshot-header-original.png)
-  </br> After amendment: </br>
-  ![Header Amended code](/assets/images/screenshot-header-tag.png)
+
+  ![Original header code](/assets/images/screenshot-header-original.png)
+
+  After amendment:
+
+  ![Amended header code](/assets/images/screenshot-header-tag.png)
+
+  See before and after footer tags: </br>
+  Before:
+
+  ![Original footer code](/assets/images/screenshot-footer-original.png)
+
+  After amendment:
+
+  ![Amended footer code](/assets/images/screenshot-footer-tag.png)
 
 - We amended the code for the use of semantic elements in the body:
+
   - Using nav tags inside the header to enclose the unordered list (_Note: adjusted the CSS descriptions accordingly_)
   - Using main and section tags instead of some of the div tags for a better structured content section
   - Using aside tags instead of div tags for the benefits section (side part of the page)
+
+  See screenshot of amended tags:
+
+  Before:
+
+  ![Original main section](/assets/images/screenshot-main-original.png)
+
+  After amendment:
+
+  ![Amended main section](/assets/images/screenshot-main-tag.png)
 
 ## Identification of the different elements on the page:
 
