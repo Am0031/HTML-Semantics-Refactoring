@@ -4,9 +4,14 @@
 
 This webpage's code is already built but its **semantic elements** were reviewed in order to be made more accessible for screen readers.
 
-Deployed URL:
+Deployed URL: [Deployed at this address](https://am0031.github.io/HTML-Semantics-Refactoring/)
 
-Github URL: [https://github.com/Am0031/HTML-Semantics-Refactoring](https://github.com/Am0031/HTML-Semantics-Refactoring)
+![Deployment address](/assets/images/page-deployment.png)
+
+Github URL:
+
+- Main folder: [Link to the main branch](https://github.com/Am0031/HTML-Semantics-Refactoring)
+- Pull request: [Link to Pull request from dev branch](https://github.com/Am0031/HTML-Semantics-Refactoring/pull/1#issue-1190133294)
 
 ## Introduction - What are HTML Semantic elements
 
@@ -25,15 +30,15 @@ For this code review, we are working from the following principles:
 - Better identification of the different elements on the page
 - All redirection links work for full accessibility
 
-And we will also do some CSS refactoring for cleaner code.
+And the review will also include some CSS refactoring for cleaner code.
 
 Following these principles, the details of the changes made are shown in the descriptions and screenshots below.
 
 ## Logical division of the page
 
-To make sure the division of the page followed a good logic:
+To make sure the division of the page followed a good logic, the below amendments were done:
 
-- We amended the code for the use of semantic elements `header` and `footer` instead of `div`, and we used `nav` tags inside the header to enclose the unordered list. (_Note: adjusted the CSS descriptions accordingly_)
+- Amending the code for the use of semantic elements `header` and `footer` instead of `div`, and using `nav` tags inside the header to enclose the unordered list. (_Note: adjusted the CSS descriptions accordingly_)
 
   See header before and after review:
 
@@ -55,7 +60,7 @@ To make sure the division of the page followed a good logic:
 
   ![Amended footer code](/assets/images/screenshot-footer-tag.png)
 
-- We amended the code for the use of semantic elements in the body:
+- Amending the code for the use of semantic elements in the body:
 
   - Using main and section tags instead of some of the div tags for a better structured content section
   - Using aside tags instead of div tags for the benefits section (side part of the page)
@@ -72,9 +77,9 @@ To make sure the division of the page followed a good logic:
 
 ## Identification of the different elements on the page
 
-To make sure the elements were identified correctly:
+To make sure the elements were identified correctly, the below actions were taken:
 
-- We added additional properties for the hero image to made it more accessible.
+- Adding additional properties for the **hero** image to made it more accessible.
 
   Original line:
 
@@ -84,17 +89,17 @@ To make sure the elements were identified correctly:
 
   ![New code line for hero image](/assets/images/screenshot-hero-aria.png)
 
-- We added the `figure` tags around images to enclose the `img` tags and its caption (if relevant).
+- Adding the `figure` tags around images to enclose the `img` tags and its caption (if relevant).
   (_Note: that helps when placed just before a paragraph &mdash; for example in benefits section &mdash; so the screen reader knows the difference between the picture's info and a separate paragraph_)
 
-- We added an `alt` attribute into the `img` attributes to give a description for each picture and icon.
+- Adding an `alt` attribute into the `img` attributes to give a description for each picture and icon.
   (_Note: that helps the screen reader when reading the images on the page_)
 
   See an example of the added figure tags and alt attribute in this screenshot:
 
   ![Example of figure tags and alt attribute](/assets/images/screenshot-fig-alt.png)
 
-- We amended the title: we gave a longer description in the title space to have a more meaningful title
+- Amending the title: we gave a longer description in the title space to have a more meaningful title
 
   Original code:
 
@@ -104,14 +109,14 @@ To make sure the elements were identified correctly:
 
   `<title>Horiseon - Digital Marking and Online Management</title>`
 
-- We adjusted the header tag in the footer to `h4` so that it falls into a logical order with the other header tags &mdash; see footer screenshot above.
+- Adjusting the header tag in the footer to `h4` so that it falls into a logical order with the other header tags &mdash; see footer screenshot above.
   (_Note: adjusted in html code and in CSS description_)
 
 ## Redirection links - Bug fix
 
 To make the page fully accessible, the redirection links must all work and direct the user to the right part of the page.
 
-To that effect, we added a missing `id` to the first nav bar item target to redirect to the correct part of the main section when clicked on.
+To that effect, a missing `id` was added to the first nav bar item target to redirect to the correct part of the main section when clicked on.
 
 See the original code with no `id` defined:
 
@@ -123,7 +128,7 @@ And after with the `id` added:
 
 ## Improvement of the CSS
 
-As part of our accessibility exercise, we also looked to improve the CSS code and we made the following changes:
+As part of our accessibility exercise, the file style.css was also looked at to improve the CSS code and the following changes were made:
 
 - Adding comments in the CSS code for clarity
 - Grouping the different classes of the benefits sections in the aside part into one class called **benefit-subset** as they all have the same attributes and values
