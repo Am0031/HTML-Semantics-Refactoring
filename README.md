@@ -3,6 +3,9 @@
 **Refactoring a HTML page for better accessibility**
 
 This webpage's code is already built but its **semantic elements** were reviewed in order to be made more accessible for screen readers.
+The webpage remains the same, only the code has been refactored. See before and after views of the website page below:
+
+Before: ![before](/assets/images/01-html-css-git-homework-demo.png) After: ![after](/assets/images/html-semantics-refactoring-website-after.png)
 
 Deployed URL: [Deployed at this address](https://am0031.github.io/HTML-Semantics-Refactoring/)
 
